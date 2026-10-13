@@ -83,7 +83,7 @@ func tableAzureDevOpsGitItem(_ context.Context) *plugin.Table {
 			},
 			{
 				Name:        "commit_id",
-				Description: "ID of the commit the item was last changed in at this version.",
+				Description: "ID of the commit version resolved to, the same on every row of a listing; on the root / row it is the head of the branch.",
 				Type:        proto.ColumnType_STRING,
 			},
 			{
